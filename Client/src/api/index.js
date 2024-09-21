@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API = axios.create({ baseURL: 'http://localhost:7080/' });
+const API = axios.create({ baseURL: 'https://contact-reach.onrender.com' });
 
 API.interceptors.request.use(req => {
     if (localStorage.getItem('Profile')) {

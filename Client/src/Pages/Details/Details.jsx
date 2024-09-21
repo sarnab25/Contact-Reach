@@ -12,7 +12,7 @@ const navigate = useNavigate()
         const fetchDetails=async()=>
         {
             try {
-                const response = await axios.get(`http://localhost:7080/contacts/${id}`)
+                const response = await axios.get(`https://contact-reach.onrender.com/contacts/${id}`)
              
                 setcontact(response.data)
                 console.log("Fetched Contaact:",contact)

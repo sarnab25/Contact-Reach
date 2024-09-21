@@ -16,7 +16,7 @@ formData.append("Lastname", lastname)
 formData.append("Mobile",phone)
 
 try {
-    const response =await axios.post("http://localhost:7080/contacts/create",formData,{ headers: {
+    const response =await axios.post("https://contact-reach.onrender.com/contacts/create",formData,{ headers: {
         'Content-Type': 'application/json',
       },})
       console.log("Contact created", response.data)
