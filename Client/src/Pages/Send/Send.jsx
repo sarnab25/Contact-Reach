@@ -8,7 +8,7 @@ function Send() {
     const handleClick =async()=>
     {
 try {
-    const response = await axios.post(`http://localhost:7080/send/${fullName}`)
+    const response = await axios.post(`https://contact-reach.onrender.com/send/${fullName}`)
     alert("Message to verified reciepient phone number , becuase the number provided in task needs to be verified first to sent message")
     setmessage(`Hi, Your OTP is ${response.data}`)
 } catch (error) {
